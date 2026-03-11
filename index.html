@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CMS Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Counselor Management System</h1>
+
+<div class="hours">
+Total Monthly Hours: <span id="total">192</span> |
+Used Hours: <span id="used">0</span> |
+Remaining Hours: <span id="remaining">192</span>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Student</th>
+<th>Type</th>
+<th>Sessions Done</th>
+<th>Progress</th>
+<th>Check-in</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>Student A</td>
+<td>Weekend</td>
+<td id="s1">0</td>
+<td>
+<div class="progress">
+<div id="bar1" class="bar"></div>
+</div>
+</td>
+<td><button onclick="checkin(1)">Check-in</button></td>
+</tr>
+
+<tr>
+<td>Student B</td>
+<td>Weekday</td>
+<td id="s2">0</td>
+<td>
+<div class="progress">
+<div id="bar2" class="bar"></div>
+</div>
+</td>
+<td><button onclick="checkin(2)">Check-in</button></td>
+</tr>
+
+<tr>
+<td>Student C</td>
+<td>Weekend</td>
+<td id="s3">0</td>
+<td>
+<div class="progress">
+<div id="bar3" class="bar"></div>
+</div>
+</td>
+<td><button onclick="checkin(3)">Check-in</button></td>
+</tr>
+
+</tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
